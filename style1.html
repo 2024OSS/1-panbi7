@@ -6,9 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div#top {
+        #top,
+        #sidebar,
+        #bottom,
+        #footer,
+        .menuitem {
+            border-radius: 4px;
+        }
+
+        body {
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+
+        .container {
+            xmin-width: 900px;
+        }
+
+        .menuitem {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+            position: relative;
+            overflow: auto;
+            margin-top: 1%;
+            margin-right: 30%;
+        }
+
+        #top {
+            line-height: 70px;
             background-color: #04AA6D;
             padding: 15px;
+            line-height: 26px;
+        }
+
+        #top h1 {
+            margin: 0;
+            line-height: 50px;
+        }
+
+        #maincontainer {
+            position: relative;
+            overflow: auto;
+        }
+
+        #footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            font-size: 70%;
+            line-height: 14px;
+            margin: 4px;
+            border: 1px solid #d4d4d4;
+        }
+
+        #menu {
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+
+        #main {
+            width: 60%;
+            height: 100%;
+            float: left;
+        }
+
+        #sidebar {
+            width: 200px;
+            height: 300px;
+            float: right;
+            background-color: #32a4e7;
+            margin-top: 1%;
+            padding-left: 1%;
+        }
+
+        #menulist {
+            padding-left: 0%;
         }
 
         .white {
@@ -16,49 +93,55 @@
         }
 
         .nospace {
-            padding : 0;
-            margin : 0;
+            padding: 0;
+            margin: 0;
         }
     </style>
 </head>
 <div id="top">
     <h1 class="white">Welcome to My Homepage</h1>
-    <p class="white">Use the menu to select different Stylesheets</p>
+    <p class="white nospace">Use the menu to select different Stylesheets</p>
 </div>
-<div>
-    <ul>
-        <li>Stylesheet 1</li>
-        <li>Stylesheet 2</li>
-        <li>Stylesheet 3</li>
-        <li>Stylesheet 4</li>
-        <li>No Stylesheet</li>
-    </ul>
+<div id="maincontainer">
+    <div id="menu">
+        <ul id="menulist">
+            <div><li class="menuitem">Stylesheet 1</div>
+            <li class="menuitem">Stylesheet 2
+            <li class="menuitem">Stylesheet 3
+            <li class="menuitem">Stylesheet 4
+            <li class="menuitem">No Stylesheet
+        </ul>
+    </div>
+
+    <div id="main">
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+            the
+            layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+            links:<br>
+            <a href="style1.html" onclick="reStyle(0);return false">Stylesheet1</a>,
+            <a href="style2.html" onclick="reStyle(1);return false">Stylesheet2</a>,
+            <a href="style3.html" onclick="reStyle(2);return false">Stylesheet3</a>,
+            <a href="style4.html" onclick="reStyle(3);return false">Stylesheet4</a>.
+        </p>
+        <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+            looks
+            like
+            with<br><a href="nostyle.html" onclick="noStyles();return false">No Stylesheet</a>.</ㅔ>
+    </div>
+
+    <div id="sidebar">
+        <h3 class="white">Side-Bar</h3>
+        <p class="white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet
+            dolore
+            magna aliquam erat volutpat.</p>
+    </div>
 </div>
 
-<div>
-    <h1>Same Page Different Stylesheets</h1>
-    <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the
-        layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
-        links:<br>
-        <a href="style1.html" onclick="reStyle(0);return false">Stylesheet1</a>,
-        <a href="style2.html" onclick="reStyle(1);return false">Stylesheet2</a>,
-        <a href="style3.html" onclick="reStyle(2);return false">Stylesheet3</a>,
-        <a href="style4.html" onclick="reStyle(3);return false">Stylesheet4</a>.
-    </p>
-    <h2>No Styles</h2>
-    <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
-        like
-        with<br><a href="nostyle.html" onclick="noStyles();return false">No Stylesheet</a>.</ㅔ>
-</div>
 
-<div>
-    <h3>Side-Bar</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore
-        magna aliquam erat volutpat.</p>
-</div>
-
-<div>
+<div id="footer">
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
         dolore
         magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
