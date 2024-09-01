@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: #1F2326;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 10%;
+        }
+
+        .main {
+            height: 60%;
+            font-size: 20px;
+            color: white;
+            display: flex;
+            justify-content: center; /* 수평 중앙 정렬 */
+            align-items: center; /* 수직 중앙 정렬 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+            padding: 0 20px; /* 좌우 여백 */
+        }
+
+        .bottom {
+            height: 10%;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .top h1 {
+            margin: 0;
+            padding-right: 20px;
+        }
+
+        h3 {
+            font-size: 50px;
+            margin-bottom: 0px;
+        }
+
+        #menulist {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+        }
+
+        .menuitem {
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .button {
+            background-color: white;
+            color: #1F2326;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px auto;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .menuitemnow {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Cover</h1>
+        </div>
+        <div>
+            <ul id="menulist">
+                <li class="menuitemnow" onclick="window.location.href='Home.html'">Home</li>
+                <li class="menuitem" onclick="window.location.href='Features.html'">Features</li>
+                <li class="menuitem" onclick="window.location.href='Contact.html'">Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <h3>Cover your page.</h3>
+            <p>Cover is a one-page template for building simple and beautiful home<br> pages. Download, edit the text, and add your own fullscreen<br> background photo to make it your own.</p>
+        </div>
+    </div>
+
+    <div class="button" onclick="window.location.href='Learn.html'">Learn more</div>
+
+    <div class="bottom">Cover template for Bootstrap, by @mdo.</div>
+
+</body>
+
+</html>
