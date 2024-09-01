@@ -24,6 +24,7 @@
             width: 20%;
             height: 100%;
             float: right;
+            margin-top: 0%;
         }
 
         #main {
@@ -36,22 +37,17 @@
 
         #sidebar {
             background-color: #F6DAD7;
-            display: block;
-            font-size: 1.17em;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            unicode-bidi: isolate;
+            margin: 0px;
+            padding: 10px;
+            font-size: 80%;
+            line-height: 20px;
         }
 
         #bottom {
-            border: 1px solid #d4d4d4;
-            background-color: #f1f1f1;
             text-align: center;
             padding: 10px;
             font-size: 70%;
-            line-height: 14px;
+            color: #ffffff;
         }
 
         #mainmenulist {
@@ -60,6 +56,38 @@
 
         .red {
             color: #d14836;
+        }
+
+        .menuitem {
+            width: 155px;
+            background-color: #d14836;
+            border: 1px solid #d14836;
+            border-radius: 40px;
+            color: #ffffff;
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .menuitemnow {
+            width: 155px;
+            border: 1px solid #d14836;
+            border-radius: 40px;
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+            color: #d14836;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: large;
+            font: Verdana;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -73,8 +101,8 @@
         </div>
         <div id=mainmenulist>
             <ul id="menulist">
-                <li class="menuitem now" onclick="window.location.href='style1.html'">Stylesheet 1</li>
-                <li class="menuitem" onclick="window.location.href='style2.html'">Stylesheet 2</li>
+                <li class="menuitem" onclick="window.location.href='style1.html'">Stylesheet 1</li>
+                <li class="menuitemnow" onclick="window.location.href='style2.html'">Stylesheet 2</li>
                 <li class="menuitem" onclick="window.location.href='style3.html'">Stylesheet 3</li>
                 <li class="menuitem" onclick="window.location.href='style4.html'">Stylesheet 4</li>
                 <li class="menuitem" onclick="window.location.href='style5.html'">No Stylesheet</li>
