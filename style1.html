@@ -96,6 +96,12 @@
             padding: 0;
             margin: 0;
         }
+
+        .now {
+            background-color: #04AA6D;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <div id="top">
@@ -105,12 +111,12 @@
 <div id="maincontainer">
     <div id="menu">
         <ul id="menulist">
-            <div><li class="menuitem">Stylesheet 1</div>
-            <li class="menuitem">Stylesheet 2
-            <li class="menuitem">Stylesheet 3
-            <li class="menuitem">Stylesheet 4
-            <li class="menuitem">No Stylesheet
-        </ul>
+            <li class="menuitem now" onclick="window.location.href='style1.html'">Stylesheet 1</li>
+            <li class="menuitem" onclick="window.location.href='style2.html'">Stylesheet 2</li>
+            <li class="menuitem" onclick="window.location.href='style3.html'">Stylesheet 3</li>
+            <li class="menuitem" onclick="window.location.href='style4.html'">Stylesheet 4</li>
+            <li class="menuitem" onclick="window.location.href='style5.html'">No Stylesheet</li>
+        </ul>        
     </div>
 
     <div id="main">
